@@ -28,11 +28,13 @@ body{
 }
 .navbar a:hover{
     color:black;
+    font-weight: bold;
 }
 .navbutton{
-    border: 1px solid #402100;
+    border: 2px solid #402100;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     border-radius: 25px;
-    padding: 10px 30px;
+    padding: 10px 10px;
     letter-spacing: 0.1rem;
     font-size: 1.2rem;
     color: white;
@@ -46,6 +48,7 @@ right: 0;
 z-index: -1;
 width: 39.6rem;
 height: 44.4rem;
+
 }
 
 /* section1 */
@@ -116,16 +119,14 @@ h1{
     text-decoration: none ;
     color: white;
 }
-.headerbutton1 a:hover{
+.headerbutton1 a:hover, .headerbutton2 a:hover{
     color:orangered;
+    font-weight: bold;
 }
 .headerbutton2 a{
     text-decoration: none ;
     color: black;
 }
-.headerbutton2 a:hover{
-    color: orangered;
-} 
 .headercontent{
     padding-right: 14%;
 }
@@ -158,6 +159,7 @@ h1{
 }
 .servicebutton a:hover{
     color: black;
+    font-weight: bold;
 }
 .servicecontainer{
     margin-top: 15%;
@@ -310,6 +312,7 @@ footer{
 }
 .footersubcontainer1 a:hover{
     color: black;
+    font-weight: bold;
 }
 .footersubcontainer2{
     margin: 0 1.5rem;
@@ -333,6 +336,7 @@ footer{
 }
 .footersubcontainer3 a:hover{
     color: black;
+    font-weight: bold;
 }
 .footersubcontainer4{
     display: flex;
@@ -347,25 +351,31 @@ footer{
 }
 .footersubcontainer4 a:hover{
     color: black;
+    font-weight: bold;
 }
 #footerheading{
     color: black;
+    font-weight: bold;
     font-size: 1.3rem;
 }
-.hamburger{
-    display: none;
-}
+#menu{
+    display: none;}
+/* }
 .bar1, .bar2, .bar3{
     width: 1rem;
     height: 1rem;
     background-color: black;
-}
+} */
+
+  
+
 
 @media screen and (max-width: 768px) {
 .mainnav{
-    align-items: center;
-    border: 5px solid #FF8400;
-    padding: 0px 20px;
+    /* align-items: center; */
+    border: 4px solid #FF8400;
+    padding: 0px 0px;
+    align-items:stretch
 }
 /* .hamburger{
     display: flex;
@@ -373,9 +383,33 @@ footer{
     max-height: 4rem;
     border: 1px solid black;
 } */
+#menu {
+    z-index: 2;
+    display: block;
+    max-width: 4rem;
+    max-height: 4rem;
+    border: 1px solid black;
+  }
+
+#menu-bar {
+    width: 3.5rem;
+    height: 3.2rem;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  .bar {
+    height: 10px;
+    width: 100%;
+    margin: 0.5rem 0;
+    background-color: #FF8400;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
 .navbar{
     display: none;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     
 }
 .navbar a {
@@ -383,6 +417,7 @@ footer{
 }
 .navbar a:hover{
     color: orangered;
+    font-weight: bold;
 }
 .ellipse-1{
     display: none;
