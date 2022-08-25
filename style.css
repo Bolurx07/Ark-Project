@@ -12,18 +12,16 @@ body{
 .mainnav{
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px;
-    align-items:flex-start;
+    padding: 1rem 3rem;
 }
 .navbar{
     display: flex;
-    padding: 0;
     font-size: 1.2rem;
     align-items: center;
 }
 .navbar a{
     text-decoration: none;
-    padding: 20px;
+    padding: 1.5rem;
     color: white;
 }
 .navbar a:hover{
@@ -71,14 +69,14 @@ span{
 }
 h1{
     font-weight: 700;
-    font-size: 60px;
-    line-height: 58px;
-    width: 342px;
-    padding-bottom: 20px;
+    font-size: 4.2rem;
+    line-height: 3.5rem;
+    width: 23rem;
+    padding-bottom: 1.2rem;
 }
 .subheader{
     display: flex;
-    padding-right: 20;
+    /* padding-right: 20px; */
 }
 .subheader p{
     font-weight: 500;
@@ -88,7 +86,7 @@ h1{
 }
 .headercontainer{
     display: flex;
-    padding: 30px 10rem;
+    padding: 2.5rem 10rem;
 }
 .ellipse-1{
     position: absolute;
@@ -358,14 +356,8 @@ footer{
     font-weight: bold;
     font-size: 1.3rem;
 }
-#menu{
+#menu, .menu-bg{
     display: none;}
-/* }
-.bar1, .bar2, .bar3{
-    width: 1rem;
-    height: 1rem;
-    background-color: black;
-} */
 
   
 
@@ -374,21 +366,16 @@ footer{
 .mainnav{
     /* align-items: center; */
     border: 4px solid #FF8400;
-    padding: 0px 0px;
-    align-items:stretch
+    padding: 1rem 2rem;
+    justify-content: space-between;
+
+    
 }
-/* .hamburger{
-    display: flex;
-    max-width: 4rem;
-    max-height: 4rem;
-    border: 1px solid black;
-} */
 #menu {
-    z-index: 2;
+    /* z-index: 2; */
     display: block;
-    max-width: 4rem;
+    /* max-width: 4rem; */
     max-height: 4rem;
-    border: 1px solid black;
   }
 
 #menu-bar {
@@ -420,14 +407,25 @@ footer{
     font-weight: bold;
 }
 .ellipse-1{
-    display: none;
+   max-width: 3rem;
+   max-height: 20rem;
 }
-.backgroundpic{
+.backgroundpic, .homepagepic{
     display: none;
 }
 .headercontainer{
-    padding: 0px 60px;
+    display: block;
+    align-items: center;
+    border: 1px solid black;
+    margin: auto;
+    max-width: 100%;
+    padding: 2.5rem 5rem;
     
+}
+h1{
+    font-size: 3.2rem;
+    width: 100%;
+    align-items: center;
 }
 .star-1{
    display: none;
