@@ -420,12 +420,24 @@ footer{
     margin: auto;
     max-width: 100%;
     padding: 2.5rem 5rem;
-    
+}
+.headercontent{
+    padding-right: 0%;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2rem;
 }
 h1{
     font-size: 3.2rem;
     width: 100%;
-    align-items: center;
+    text-align: center;
+}
+.subheader {
+    justify-content: center;
+    border: 1px solid black;
+}
+.headerbutton{
+    justify-content: space-between;
 }
 .star-1{
    display: none;
