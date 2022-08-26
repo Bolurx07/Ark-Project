@@ -29,7 +29,7 @@ body{
 }
 .navbutton{
     border: 2px solid #402100;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 10px 20px rgba(0back, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     border-radius: 25px;
     padding: 10px 10px;
     letter-spacing: 0.1rem;
@@ -68,11 +68,71 @@ h1{
 }
 .storycontainer{
     display: flex;
-    padding: 5rem 2rem;
+    justify-content: space-evenly;
+    padding: 3rem 5rem ;
 }
 h2{
     font-weight: 500;
     font-size: 3rem;
     line-height: 3.4rem;
+    margin: 3rem 0;
+}
+.storysubcontainer1 p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    width: 30rem;
+    height: 11.5rem;
+    text-align: justify;
+}
+.storysubcontainer2{
     padding: 3rem 0;
+}
+.storypara{
+    margin-bottom: 1rem;
+}
+.dot1{
+    position: relative;
+    top: 8%;
+    right: 14%;
+    z-index: -1;
+}
+.believecontainer{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 25%;
+    border: 1px solid;
+}
+.believediv1{
+    width: 317px;
+    height: 347.38px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-top: 3px solid #FF8400;
+    background-color: white;
+    position: absolute;
+    top: 82rem;
+    left: 10rem;
+    flex: 30%;
+    
+}
+.believediv2{
+    flex: 70%;
+    width: 765px;
+    height: 445px;
+    
+    background-color: #FFFAF2;
+    padding: 8rem 10rem;
+    }
+.believediv2 p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.45rem; 
+    margin: 2rem; 
+    /* z-index: -2; */
+}
+.dot2{
+    position: relative;
+    top: 91rem;
+    left: 1rem;
+    z-index: -1;
 }
