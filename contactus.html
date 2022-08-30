@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="contactus.css">
 </head>
 <body>
-    <header class="mainnav">
+    <header class="topnav">
         <div>
         <img class="navpic" src="\Images\logoblack.svg" alt="logo">
         </div>
@@ -18,24 +18,22 @@
            <a href="\contactus.html">Contact Us</a>
         </nav>
         <button class="navbutton"><a href="#">Register</a></button>
-        <div id="menu">
-            <div id="menu-bar" onclick="menuOnClick()">
-              <div id="bar1" class="bar"></div>
-              <div id="bar2" class="bar"></div>
-              <div id="bar3" class="bar"></div>
-            </div>
-            <nav class="nav" id="nav">
-                <ul>
-                  <li><a href="\index.html">Home</a></li>
-                  <li><a href="\aboutus.html">About Us</a></li>
-                  <li><a href="\contactus.html">Contact Us</a></li>
-                  <li><a href="#">Register</a></li>
-                </ul>
-            </nav> 
+        <div id="myLinks">
+                <a href="\index.html">Home</a>
+                <a href="\aboutus.html">About Us</a>
+                <a href="\contactus.html">Contact Us</a>
+                <a href="#">Register</a>
         </div>
-        <div class="menu-bg" id="menu-bg"></div>
-     </header> 
-     <section class="maincontactcontainer1">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div id="menu-bar">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+        </a>
+    
+    </header> 
+    <section class="maincontactcontainer1">
         <div class="contactcontainer1">
             <div class="contactmaindiv1">
                 <h1>Contact Us</h1>
@@ -117,5 +115,6 @@
             </div>
         </div>
     </footer> 
+    <script src="\javascript.js"></script>
 </body>
 </html>

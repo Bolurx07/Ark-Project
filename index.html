@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
 </head>
 <body>
- <header class="mainnav">
+ <header class="topnav">
     <div>
     <img class="navpic" src="\Images\logo.png" alt="logo">
     </div>
@@ -20,25 +19,22 @@
        <button class="navbutton"><a href="#">Register</a></button>
     </nav>
     <img class="backgroundpic" src="\Images\background-pic.svg" alt="background-pic">
-    <div id="menu">
-        <div id="menu-bar" onclick="menuOnClick()">
-          <div id="bar1" class="bar"></div>
-          <div id="bar2" class="bar"></div>
-          <div id="bar3" class="bar"></div>
-        </div>
-        <nav class="nav" id="nav">
-            <ul>
-              <li><a href="\index.html">Home</a></li>
-              <li><a href="\aboutus.html">About Us</a></li>
-              <li><a href="\contactus.html">Contact Us</a></li>
-              <li><a href="#">Register</a></li>
-            </ul>
-        </nav> 
+    <div id="myLinks">
+        <a href="\index.html">Home</a>
+        <a href="\aboutus.html">About Us</a>
+        <a href="\contactus.html">Contact Us</a>
+        <a href="#">Register</a>
     </div>
-        
-    <div class="menu-bg" id="menu-bg"></div>
- </header> 
- <section>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div id="menu-bar">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    </a>
+</header> 
+
+<section>
     <div>
         <img class="star-1" src="\Images\star-1.svg" alt="star">
     </div>
@@ -181,5 +177,6 @@
         </div>
     </div>
 </footer> 
+<script src="javascript.js"></script>
 </body>
 </html>

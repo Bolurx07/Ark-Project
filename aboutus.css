@@ -299,7 +299,7 @@ footer{
     transition: 0.3s ease;
   }
 
-  #bar1 {
+  /* #bar1 {
     transform: translateY(-4px);
   }
   
@@ -332,8 +332,8 @@ footer{
   }
   
   .menu-bg, #menu {
-    top: 0;
-    left: 0;
+    top: 1rem;
+    right: 2rem;
     position: absolute;
   }
   
@@ -343,7 +343,6 @@ footer{
     height: 0;
     margin: 30px 0 20px 20px;
     background-image: linear-gradient(to right, red , yellow);
-    /* background: radial-gradient(circle, #DC052D, #DC052D); */
     border-radius: 25%;
     transition: 0.3s ease;
   }
@@ -357,7 +356,7 @@ footer{
   }
   
   .change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
+    transform: translateY(4px) rotateY(-45deg);
   }
   
   .change #bar2 {
@@ -372,7 +371,7 @@ footer{
     width: 1040px;
     height: 920px;
     transform: translate(-60%,-30%);
-  }
+  } */
 .headercontainer{
     padding: 3rem 5rem;
 }
