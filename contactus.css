@@ -15,21 +15,27 @@ body{
     padding: 1rem 3rem;
     align-items: center;
     border: 0px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(235, 230, 230);
     overflow: hidden;
-    position: relative;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
-.navbar{
+
+.navbar {
     display: flex;
     font-size: 1.2rem;
     align-items: center;
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     padding: 1.5rem;
     color: black;
 }
-.navbar a:hover, .navbutton a:hover{
+
+.navbar a:hover, .navbutton a:hover {
     font-weight: bolder;
 }
 .navbutton{
@@ -48,7 +54,10 @@ body{
     padding: 1.5rem;
     color: white;
 }
-
+#navvv{
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    margin-left: 1rem;
+}
 .topnav #myLinks {
     display: none;
   }
@@ -70,10 +79,10 @@ body{
   }
   
   
-  #menu-bar {
+#menu-bar {
     width: 3.5rem;
     height: 3.2rem;
-    margin: 15px 0 ;
+    margin: 30px 10px ;
     cursor: pointer;
   }
 .bar {
@@ -99,14 +108,8 @@ body{
 }
 
 
-
-
-
-
-/* #menu, .menu-bg{
-    display: none;
-} */
 .maincontactcontainer1{
+    margin-top: 6rem;
     padding: 4rem 0;
 }
 .contactcontainer1{
@@ -276,9 +279,14 @@ footer{
     margin: 0 1.5rem;
 }
 .footersubcontainer4 a{
+    display: flex;
+    align-items: flex-start;
     text-decoration: none;
     color: #FFFFFF;
     padding: 1rem 0;
+}
+.footersubcontainer4 img {
+    margin-right: 1rem;
 }
 .footersubcontainer4 a:hover{
     color: black;
@@ -300,28 +308,29 @@ footer{
     .navbar, .navbutton{
        display: none;
     }
-     .topnav{
+    .topnav{
          display: block;
          position: fixed;
          top: 0;
          width: 100%;
          overflow: hidden;
+         background-color: rgb(235, 230, 230);
      }
-     .topnav a:hover {
+    .topnav a:hover {
        background-color: #ddd;
        font-weight: bolder;
      }
-     #menu-bar{
+    #menu-bar{
          display: block;
         }
         
-        h1{
+    h1{
         font-size: 2rem;
     }
     .maincontactcontainer1{
         padding: 0;
         margin-bottom: 2rem;
-        margin-top: 8rem;
+        margin-top: 12rem;
     }
     .contactmaindiv1, .contactmaindiv2{
         padding: 6rem 1.5rem;

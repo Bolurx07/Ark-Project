@@ -9,11 +9,34 @@ body{
     font-style: normal;
 }
 /* Navbar */
-.mainnav{
+.topnav {
+    overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 3rem;
-}
+    padding: 1rem 3rem;  
+  }
+  
+.topnav #myLinks {
+    display: none;
+  }
+  
+.topnav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    
+  }
+  
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
 .navbar{
     display: flex;
     font-size: 1.2rem;
@@ -36,6 +59,15 @@ body{
     font-size: 1.2rem;
     color: white;
     background-color:#FF8400;
+}
+#myLinks {
+    text-align: center;
+    background-color: black;   
+    width: 100%;
+}
+
+#menu-bar{
+    display: none;
 }
 .firstpage{
     background-color: #FF8400;
@@ -252,9 +284,14 @@ footer{
     margin: 0 1.5rem;
 }
 .footersubcontainer4 a{
+    display: flex;
+    align-items: flex-start;
     text-decoration: none;
     color: #FFFFFF;
     padding: 1rem 0;
+}
+.footersubcontainer4 img {
+    margin-right: 1rem;
 }
 .footersubcontainer4 a:hover{
     color: black;
@@ -265,18 +302,30 @@ footer{
     font-weight: bold;
     font-size: 1.3rem;
 }
-#menu, .menu-bg{
-    display: none;
-}
 
+#navvv{
+    padding: 0.25rem 1.5rem 0.25rem 0.5rem;
+    margin-left: 1rem;
+}
 
 
 
 @media screen and (max-width: 768px) {
+.navbar, .navbutton{
+        display: none;
+     }
+.topnav{
+         display: block;
+     }
+#menu-bar{
+         display: block;
+     }
 
-.navbar{
-   display: none;
-}
+.topnav a:hover {
+    background-color: white;
+    font-weight: bolder;
+    color: #FF8400;
+  }
 
 #menu {
     display: block;
@@ -299,79 +348,6 @@ footer{
     transition: 0.3s ease;
   }
 
-  /* #bar1 {
-    transform: translateY(-4px);
-  }
-  
-  #bar3 {
-    transform: translateY(4px);
-  }
-  
-  .nav {
-    transition: 0.3s ease;
-    display: none;
-  }
-  
-  .nav ul {
-    padding: 0 22px;
-  }
-  
-  .nav li {
-    list-style: none;
-    padding: 12px 0;
-  }
-  
-  .nav li a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  
-  .nav li a:hover {
-    font-weight: bold;
-  }
-  
-  .menu-bg, #menu {
-    top: 1rem;
-    right: 2rem;
-    position: absolute;
-  }
-  
-  .menu-bg {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    background-image: linear-gradient(to right, red , yellow);
-    border-radius: 25%;
-    transition: 0.3s ease;
-  }
-  
-  .change {
-    display: block;
-  }
-  
-  .change .bar {
-    background-color: white;
-  }
-  
-  .change #bar1 {
-    transform: translateY(4px) rotateY(-45deg);
-  }
-  
-  .change #bar2 {
-    opacity: 0;
-  }
-  
-  .change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
-  }
-  
-  .change-bg {
-    width: 1040px;
-    height: 920px;
-    transform: translate(-60%,-30%);
-  } */
 .headercontainer{
     padding: 3rem 5rem;
 }
@@ -477,9 +453,4 @@ footer{
 .footercontainer2, .footersubcontainer3, .footersubcontainer1{
     padding-bottom:15%;
 }
-}
-
-
-@media screen and (max-width: 400px) {
-
 }
