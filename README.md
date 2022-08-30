@@ -13,7 +13,7 @@ Building a Homepage, About Us page &amp;  Contact Us page for a Consulting firm 
 
 - 👨‍💻 All of my projects are available at [https://github.com/Bolurx07/](https://github.com/Bolurx07/)
 
-- 📫 How to reach me **iaboluwatife**
+- 📫 How to reach me **iaboluwatife@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
