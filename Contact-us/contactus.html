@@ -8,31 +8,25 @@
     <link rel="stylesheet" href="contactus.css">
 </head>
 <body>
-    <header class="topnav">
+    <header>
         <div>
-        <img class="navpic" src="\Images\logoblack.svg" alt="logo">
+            <img class="navpic" src="\Images\logoblack.svg" alt="logo" />
         </div>
         <nav class="navbar">
-           <a href="\index.html">Home</a>
-           <a href="\About-us\aboutus.html">About Us</a>
-           <a href="\Contact-us\contactus.html">Contact Us</a>
+            <ul>
+                <li><a href="\index.html" class="active">Home</a></li>
+                <li><a href="\About-us\aboutus.html">About Us</a></li>
+                <li><a href="\Contact-us\contactus.html">Contact Us</a></li>
+                <li><button class="navbutton"><a href="#">Register</a></button></li>
+            </ul>
         </nav>
-        <button class="navbutton"><a href="#" id="navvv">Register</a></button>
-        <div id="myLinks">
-                <a href="\index.html">Home</a>
-                <a href="\About-us\aboutus.html">About Us</a>
-                <a href="\Contact-us\contactus.html">Contact Us</a>
-                <a href="#">Register</a>
+
+        <div id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <div id="menu-bar">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                </div>
-            </a>
-    
-    </header> 
+    </header>
     <section class="maincontactcontainer1">
         <div class="contactcontainer1">
             <div class="contactmaindiv1">
@@ -61,7 +55,7 @@
             </div>
             <div class="phonediv">
                 <div class="contactcontent">
-                    <img src="\Images\messageicon.svg" alt="phoneicon">
+                    <img src="\Images\visiticon.svg" alt="visiticon">
                     <p>Visit us</p>
                 </div>
                 <p class="contactpara">5678 Extra Rd. #123 San Francisco, CA 96120</p>

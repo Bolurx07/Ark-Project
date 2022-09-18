@@ -1,8 +1,5 @@
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+const hamburger = document.getElementById("hamburger");
+hamburger.onclick = function () {
+    navBar = document.querySelector(".navbar");
+    navBar.classList.toggle("active")
 }

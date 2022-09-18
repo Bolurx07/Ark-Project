@@ -8,113 +8,61 @@ body{
     font-family: 'Inter', sans-serif;
     font-style: normal;
 }
+
 /* Navbar */
-.topnav{
+header{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 3rem;
     align-items: center;
-    border: 0px solid black;
-    position: fixed;
-    top: 0;
+    padding: 1rem 2rem;
     width: 100%;
-    background-color: rgb(235, 230, 230);
-    overflow: hidden;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
-
-.navbar {
+.navbar ul{
+    
     display: flex;
-    font-size: 1.2rem;
+    justify-content: space-between;
     align-items: center;
 }
-
-.navbar a {
-    text-decoration: none;
-    padding: 1.5rem;
-    color: black;
+.navbar ul li {
+    list-style: none;
+    padding: 0 1rem;
 }
-
-.navbar a:hover, .navbutton a:hover {
-    font-weight: bolder;
+.navbar ul li a{
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navbar ul li a:hover{
+    font-size: 1.8rem;
+    transition: 1s;
 }
 .navbutton{
-    border: 0px solid #402100;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    border-radius: 25px;
-    padding: 1px 1px;
-    letter-spacing: 0.1rem;
-    font-size: 1.2rem;
-    height: 3rem;
-    width: 10rem;
     background-color:#FF8400;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
 }
-.navbutton a{
-    text-decoration: none;
-    padding: 1.5rem;
-    color: white;
+.navbutton:hover{
+    background-color: white;
 }
-#navvv{
-    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
-    margin-left: 1rem;
-}
-.topnav #myLinks {
-    display: none;
-  }
-  
-  .topnav a {
+
+.navbutton a:hover{
     color: black;
-    padding: 1rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: block;
-    
-  }
-  
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  
-#menu-bar {
-    width: 3.5rem;
-    height: 3.2rem;
-    margin: 30px 10px ;
-    cursor: pointer;
-  }
-.bar {
-    height: 10px;
-    width: 100%;
-    margin: 0.5rem 0;
-    background-color: #FF8400;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
-  }
-#myLinks {
-   
-    text-align: center;
-    background-color: #FF8400;
-    
 }
-#myLinks {
-    width: 100%;
-}
-#menu-bar{
+
+#hamburger{
     display: none;
 }
-
-
 .maincontactcontainer1{
-    margin-top: 6rem;
     padding: 4rem 0;
 }
 .contactcontainer1{
     display: flex;
     margin: 2rem 0 ;
+    margin-bottom: 5rem;
 }
 .contactmaindiv1{
     background-color: #FF8400;
@@ -305,25 +253,53 @@ footer{
 
 @media screen and (max-width: 768px) {
 
-    .navbar, .navbutton{
-       display: none;
+    header{
+        position: fixed;
+        top: 0;
+        background-color: rgb(233, 231, 231);
     }
-    .topnav{
-         display: block;
-         position: fixed;
-         top: 0;
-         width: 100%;
-         overflow: hidden;
-         background-color: rgb(235, 230, 230);
-     }
-    .topnav a:hover {
-       background-color: #ddd;
-       font-weight: bolder;
-     }
-    #menu-bar{
-         display: block;
-        }
-        
+    #hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .bar{
+        height: 0.5rem;
+        width: 3rem;
+        margin: 0.5rem 0;
+        background-color:#FF8400;
+        border-radius: 10px;
+    }
+    .navbar{
+        position: absolute;
+        top: 8rem;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        background-color: black;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .navbar.active{
+        height: 40vh;
+    }
+    .navbar ul{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 1rem auto;
+        opacity: 0;
+    }
+    .navbar.active ul{
+        opacity: 1;
+        margin-top: 1rem;
+    }
+    .navbar ul li {
+        padding: 0.8rem 0;
+    }
+    .navbar ul li a{
+        color: white;
+    }   
     h1{
         font-size: 2rem;
     }
@@ -331,6 +307,9 @@ footer{
         padding: 0;
         margin-bottom: 2rem;
         margin-top: 12rem;
+    }
+    .contactcontainer1{
+        margin-bottom: 2rem;
     }
     .contactmaindiv1, .contactmaindiv2{
         padding: 6rem 1.5rem;
@@ -368,6 +347,8 @@ footer{
         padding-bottom:15%;
     }
     }
+
+
     @media screen and (max-width: 500px) {
     .contactcontainer1{
          display: block;

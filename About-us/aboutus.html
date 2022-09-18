@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-us</title>
-    <link rel="stylesheet" href="aboutus.css">
-</head>
-<body>
-<section class="firstpage">
-        <header class="topnav">
-            <div>
-            <img class="navpic" src="\Images\whitelogo.svg" alt="logo">
-            </div>
-            <nav class="navbar">
-                <a href="\index.html">Home</a>
-                <a href="\About-us\aboutus.html">About Us</a>
-                <a href="\Contact-us\contactus.html">Contact Us</a>
-                <button class="navbutton"><a href="#" id="navvv">Register</a></button>
-            </nav>
-            <div id="myLinks">
-                <a href="\index.html">Home</a>
-                <a href="\About-us\aboutus.html">About Us</a>
-                <a href="\Contact-us\contactus.html">Contact Us</a>
-                <a href="#">Register</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <div id="menu-bar">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About-us</title>
+        <link rel="stylesheet" href="aboutus.css">
+    </head>
+    <body>
+        
+        <section class="firstpage">
+            <header>
+                <div>
+                    <img class="navpic" src="\Images\whitelogo.svg" alt="logo" />
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="\index.html" class="active">Home</a></li>
+                        <li><a href="\About-us\aboutus.html">About Us</a></li>
+                        <li><a href="\Contact-us\contactus.html">Contact Us</a></li>
+                        <li><button class="navbutton"><a href="#">Register</a></button></li>
+                    </ul>
+                </nav>
+    
+                <div id="hamburger">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
-            </a>
-        </header>
+            </header>
+    
+            <div class="headercontainer">
+                <h1>We Put Our Customer first</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet v</p>
+            </div>
+        </section>
 
-    <div class="headercontainer">
-        <h1>We Put Our Customer first</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet v</p>
-    </div>
-</section>
 <section class="storycontainer">
     <div class="storysubcontainer1">
         <h2>Our Story.</h2>
@@ -170,6 +167,6 @@
             </div>
         </div>
     </footer>  
-    <script src="javascript.js"></script>
+    <script src="\javascript.js"></script>
 </body>
 </html>
