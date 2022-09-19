@@ -44,12 +44,12 @@ header {
   transition: 1s;
 }
 .navbutton {
-  background-color: black;
+  background-color: rgba(126, 125, 125, 0);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
     0px 0px 1px rgba(0, 0, 0, 0.04);
   border: 1px solid white;
-  border-radius: 1rem;
-  padding: 0.75rem 1rem;
+  border-radius: 27px;
+  padding: 0.75rem 2rem;
 }
 .navbutton:hover {
   background-color: white;
@@ -287,6 +287,9 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .firstpage{
+    height: 100vh;
+  }
   #hamburger {
     display: block;
     cursor: pointer;

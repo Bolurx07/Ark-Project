@@ -18,23 +18,24 @@ header{
     width: 100%;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
+
 .navbar ul{
     
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar ul li {
+header ul li {
     list-style: none;
     padding: 0 1rem;
 }
-.navbar ul li a{
+header ul li a{
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
     transition: 0.5s;
 }
-.navbar ul li a:hover{
+header ul li a:hover{
     font-size: 1.8rem;
     transition: 1s;
 }
@@ -42,8 +43,8 @@ header{
     background-color:#FF8400;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     border: 1px solid white;
-    border-radius: 1rem;
-    padding: 0.75rem 1rem;
+    border-radius: 27px;
+    padding: 0.75rem 2rem;
 }
 .navbutton:hover{
     background-color: white;
