@@ -85,7 +85,7 @@ span{
 h1{
     font-weight: 700;
     font-size: 4.2rem;
-    line-height: 3.5rem;
+    line-height: 4.5rem;
     width: 23rem;
     padding-bottom: 1.2rem;
 }
@@ -566,7 +566,7 @@ footer{
         display: none;
     }
     .servicecontainer{
-        padding: 0 5%;
+        padding: 0 10%;
     }
     .serviceheading{
         font-size: 1rem;

@@ -246,9 +246,7 @@ footer{
     font-weight: bold;
     font-size: 1.3rem;
 }
-#menubar, #myLinks{
-    display: none;
-} 
+ 
 
 
 
@@ -282,10 +280,11 @@ footer{
         overflow: hidden;
     }
     .navbar.active{
-        height: 40vh;
+        height: 30vh;
     }
-    .navbar ul{
-        display: block;
+    header ul{
+        display: flex;
+        flex-direction: column;
         width: fit-content;
         text-align: center;
         margin: 1rem auto;
@@ -300,6 +299,9 @@ footer{
     }
     .navbar ul li a{
         color: white;
+    } 
+    .navbutton{
+        display: none;
     }   
     h1{
         font-size: 2rem;
@@ -354,7 +356,7 @@ footer{
     .contactcontainer1{
          display: block;
         margin: 0 ;
-        }        
+        }       
     .contactmaindiv2{
         padding: 3rem 1.5rem;
     }
