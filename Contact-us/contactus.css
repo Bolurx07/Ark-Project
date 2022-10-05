@@ -270,7 +270,7 @@ footer{
     }
     .navbar{
         position: absolute;
-        top: 8rem;
+        top: 10rem;
         left: 0;
         right: 0;
         width: 100vw;
@@ -280,22 +280,25 @@ footer{
         overflow: hidden;
     }
     .navbar.active{
-        height: 30vh;
+        height: 40vh;
     }
     header ul{
         display: flex;
         flex-direction: column;
-        width: fit-content;
         text-align: center;
         margin: 1rem auto;
         opacity: 0;
     }
     .navbar.active ul{
+        display: block;
+        width: 35vw;
         opacity: 1;
         margin-top: 1rem;
     }
     .navbar ul li {
-        padding: 0.8rem 0;
+        padding: 1.15rem 0;
+        border-top: 2px solid white;
+        border-radius: 25px;
     }
     .navbar ul li a{
         color: white;

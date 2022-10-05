@@ -313,7 +313,7 @@ footer {
     overflow: hidden;
   }
   .navbar.active {
-    height: 40vh;
+    height: 50vh;
   }
   .navbar ul {
     display: block;
@@ -327,12 +327,18 @@ footer {
     margin-top: 1rem;
   }
   .navbar ul li {
-    padding: 0.8rem 0;
+    padding: 1.15rem 0;
+    border-top: 2px solid white;
+    border-radius: 25px;
   }
   .navbar ul li a {
     color: white;
   }
-
+  .navbutton{
+    margin-top: -1rem;
+    border: none;
+    box-shadow: none;
+}
   .headercontainer {
     padding: 3rem 5rem;
   }
