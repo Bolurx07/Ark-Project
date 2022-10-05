@@ -139,14 +139,17 @@ h2{
 .formcontainer{
     margin-top: 7rem;
 }
-#name, #email, #message{
+#name, #mail, #mesage{
     border-left: none;
     border-top: none;
     border-right: none;
     width: 100%
 }
 input{
-    padding: 2rem 0;
+    padding: 2rem 1rem;
+}
+textarea{
+    padding: 0 1rem;
 }
 #button{
     color: white;
@@ -155,11 +158,31 @@ input{
     width: 138.49px;
     height: 2.75rem;
     font-size: 1.25rem;
-    margin: 3rem auto;
+    margin: 1.5rem auto;
     padding: 0;
 }
 .buttonholder{
     text-align: center;
+    margin-bottom: 1.5rem;
+}
+.input-div{
+    display: flex;
+    position: relative;
+}
+.input-div span{
+    color: red;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+#submit-error{
+    color: red;
+    text-align: center;
+}
+
+.input-div span i{
+    color: seagreen;
 }
 footer{
     background-color: #FF8400;
@@ -256,6 +279,7 @@ footer{
         position: fixed;
         top: 0;
         background-color: rgb(233, 231, 231);
+        z-index: 1;
     }
     #hamburger{
         display: block;
@@ -337,6 +361,9 @@ footer{
     }
     .formheading{
         width: 100%;
+    }
+    .input-div{
+        z-index: 0;
     }
     footer{
         display: block;

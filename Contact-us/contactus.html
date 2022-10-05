@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-Us</title>
     <link rel="stylesheet" href="contactus.css">
+    <script src="https://kit.fontawesome.com/54764f902f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -69,13 +70,26 @@
         <p class="formheading">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         <div class="formcontainer">
         <form action="action_page.php">
-            <input type="text" id="name" name="name" placeholder="Name"><br><br>
-            <input type="email" id="email" name="email" placeholder="Email address"><br><br>
-            <textarea name="message" id="message" placeholder="message" rows="20" cols="30"></textarea><br<br>
+            <div class="input-div">
+                <input type="text" name="name" placeholder="Name" id="name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+            <br><br>
+            <div class="input-div">
+                <input type="email" name="email" placeholder="Email address" id="mail" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+            <br><br>
+            <div class="input-div">
+                <textarea name="message" placeholder="message" rows="20" cols="30" id="mesage" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <br<br>
+            <div class="buttonholder">
+                <button id="button" type="submit" onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>
+            </div>
         </form>
-        <div class="buttonholder">
-            <button id="button" type="submit">Submit</button>
-        </div>
     </section>
     <footer>
         <div class="footercontainer1">
